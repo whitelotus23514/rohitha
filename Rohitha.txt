@@ -1,0 +1,29 @@
+PROJECT-117 
+Title: Demonstrate the usage of `counter-increment` in CSS 
+Source Code: 
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Counter Increment</title> 
+<style> 
+body { 
+counter-reset: section; 
+} 
+h2::before { 
+counter-increment: section; 
+content: "Section " counter(section) ": "; 
+font-weight: bold; 
+} 
+</style> 
+</head> 
+<body> 
+<h2>WELLCOME</h2> 
+<p>daily used products</p> 
+<h2>OFFERS</h2> 
+<p>Special disconts on festival sales<p> 
+<h2>RVIEWS</h2> 
+<p>transparent with customers</p> 
+</body> 
+</html> 
+Output: 
+
